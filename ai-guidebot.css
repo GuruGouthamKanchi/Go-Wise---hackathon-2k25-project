@@ -1,0 +1,120 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+/* Nav button styling */
+.nav-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.nav-button i {
+    font-size: 20px;
+}
+
+/* Left arrow button */
+.left-arrow-btn {
+    left: 15px;
+}
+
+/* Right arrow button */
+.right-arrow-btn {
+    right: 15px;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    background: url("golden-gate.jpg") center/cover no-repeat;
+    padding-top: 70px; /* Add padding to prevent content from hiding behind fixed navbar */
+    margin: 0;
+}
+.chat-container {
+    max-width: 800px;
+    margin: 20px auto 50px; /* Adjusted top margin */
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.3),
+        rgba(0, 0, 0, 0.2)
+    );
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.chat-box {
+    height: 600px;
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.user-message {
+    background: #181C14;
+    color: #FEFAE0;
+    text-align: right;
+    border-radius: 12px;
+}
+.bot-message {
+    background: #FEFAE0;
+    border-radius: 12px;
+    color: #181C14;
+}
+h3{
+    color: #FDFAF6;
+    margin-top: 0;
+}
+#send-btn {
+    border: none;
+    background-color: #18230F;
+}
+#send-btn:hover {
+    background-color: #3F4F44;
+}
+.form-control {
+    border: none;
+    background-color: #f0f0f0;
+}
+.bot-message {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    max-width: 75%;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Travel Companion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dp-main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="dp-4.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        
+        /* Navbar styling */
+        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIGP_ZC5b_ZUKQuGBevgvP8OebAHj7JFQ&callback=initMap" async defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">      
+            <button class="nav-button home-btn" onclick="window.location.href='index.html'">
+                <i class="fas fa-home"></i>
+            </button>
+            <a class="navbar-brand" href="#">GoWise - Travel smart and avoid scams!</a>
+            <button class="nav-button arrow-btn" onclick="window.location.href='ai-guidebot-main.html'">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div class="container my-5">
+            <h2 class="text-center">Plan Your Solo Adventure</h2>
+            <p class="text-center">Discover your location and get a tailored itinerary.</p>
+            <div id="map"></div>
+            <div class="btn-group d-flex justify-content-center">
+                <button class="btn btn-primary" data-days="1">1 Day Plan</button>
+                <button class="btn btn-primary" data-days="2">2 Days Plan</button>
+                <button class="btn btn-primary" data-days="3">3 Days Plan</button>
+            </div>
+        </div>
+        <div class="spinner-border" role="status" id="loading-spinner">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div id="itinerary-container" class="itinerary-container container"></div>
+    </div>
+    <script src="dp-main.js"></script>
+</body>
+</html>
